@@ -1,0 +1,13 @@
+.header{
+  background-color: blue;
+  width:fit-content;
+  padding: 10px;
+  margin: 10px;
+}
+
+.button{
+  background-color: red;
+  width:fit-content;
+  padding: 10px;
+  margin: 10px;
+}
