@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const App = () => {
+  const [name, setname] = useState('')
   const handleSubmit =(e) =>{
     e.preventDefault();
-    console.log('Form Submitted');
+    console.log('Form Submitted by:', name);
+    setname('');
   }
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder='Enter your name' />
+        <input value={name} onChange={(e) => setname(e.target.value)} type="text" placeholder='Enter your name' />
         <button>Submit</button>
       </form>
     </div>
